@@ -5,9 +5,7 @@ const FormInput = ({
   <input
     type="number"
     className={`form-input${showHighlight ? ' form-input--highlighted' : ''}`}
-    onChange={(event) => {
-      setValue(Number(event.target.value));
-    }}
+    onChange={({ target: { value }}) => setValue(Number(value))}
   />
 );
 
