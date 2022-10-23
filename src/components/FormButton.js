@@ -1,3 +1,5 @@
+import '../style/FormButton.scss';
+
 const FormButton = ({
   label,
   onClick
